@@ -1,4 +1,4 @@
-<?php
+php
 // Connects to your Database
 include "include/dbconnect.php"; 
 
