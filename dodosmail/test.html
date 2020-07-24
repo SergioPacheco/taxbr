@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> DodosMail Regular HTML Demo </TITLE>
+<meta name="script_author" content="Ying Zhang, AKA Dodo">
+<link rel="stylesheet" href="reservoir.css" type="text/css" />
+</HEAD>
+
+<BODY background="back.png" bgcolor="#FFFFFF" text="#000000" link="#C000C0" vlink="#0000C0" alink="#0000C0">
+
+
+<form action="dodosmail.php" method="POST" class="theform">
+
+	<!-- these variables require customization -->
+	<input type="hidden" name="required_fields" value="subject,name,email,message">
+	<input type="hidden" name="subject" value="DodosMail">
+	<!--input type="hidden" name="your_email_address" value="you@yourdomain.com"-->
+	<input type="hidden" name="check_email_address" value="yes">
+
+	<!-- these variables are for error page and output page if you didn't choose to redirect -->
+	<!-- if you have defined all these in the css file, you should not have to define these, you
+			choose to erase them all -->
+	<input type="hidden" name="background_color"   value="#FFFFFF">
+	<input type="hidden" name="background_image"   value="back.png">
+	<input type="hidden" name="text_color"         value="#000000">
+	<input type="hidden" name="link_color"         value="#C000C0">
+	<input type="hidden" name="visited_link_color" value="#0000C0">
+	<input type="hidden" name="active_link_color"  value="#0000C0">
+	<!--input type="hidden" name="font_name" value="Verdana"-->
+	<!--input type="hidden" name="font_size" value="2"-->
+
+	<!-- the font color for highlighting required field -->
+	<input type="hidden" name="highlight_color" value="red">
+
+	<!-- leave it blank if you don't have a css file or know what it is -->
+	<input type="hidden" name="css_file" value="reservoir.css">
+
+	<!-- these variables are for the auto response email sent to your sender, feel free to disable by putting a "no" in the first line -->
+	<input type="hidden" name="autoresponse" value="no">
+	<input type="hidden" name="owner_name"   value="me">
+	<input type="hidden" name="response_subject" value="Thank you for your mail!">
+	<input type="hidden" name="response_mail" value="This is an auto response to let you know that I've successfully received your email sent through my email form. Thanks!">
+
+	<!-- if you want to use redirection, uncomment the following -->
+	<!--input type="hidden" name="after_url" value="thankyou.html"-->
+
+
+
+
+<table width="100%" border="0" cellpadding="10" cellspacing="3">
+
+<tr>
+<td align="right">
+</td>
+<td>
+This is to test DodosMail 2.5 backward compatibility.
+</td>
+</tr>
+
+
+
+<tr>
+<td align="right">
+Name:
+</td>
+<td>
+<input type="text" name="name" />
+</td>
+</tr>
+
+
+<tr>
+<td align="right">
+Email:
+</td>
+<td>
+<input type="text" name="email" />
+</td>
+</tr>
+
+
+<tr>
+<td align="right">
+Message:
+</td>
+<td>
+<textarea rows="5" cols="50" name="message"></textarea>
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Money:
+</td>
+<td>
+<input type="text" name="money" />
+</td>
+</tr>
+
+<tr>
+<td align="right">
+Food:
+</td>
+<td>
+<input type="text" name="food" />
+</td>
+</tr>
+
+
+<tr>
+<td align="right">
+Checkbox test:
+</td>
+<td>
+<input type="checkbox" name="checkboxtest[]" value="1">1 
+<input type="checkbox" name="checkboxtest[]" value="2">2 
+<input type="checkbox" name="checkboxtest[]" value="3">3 
+<input type="checkbox" name="checkboxtest[]" value="4">4
+</td>
+</tr>
+
+
+<tr>
+<td align="right">
+</td>
+<td>
+<input type="submit" value="Send Mail" />
+</td>
+</tr>
+
+</form>
+
+
+
+</BODY>
+</HTML>

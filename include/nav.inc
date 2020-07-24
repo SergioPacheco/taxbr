@@ -1,0 +1,1 @@
+<p><a href="menu.php">Main menu</a> | <a href="logout.php">logout</a> </p>
